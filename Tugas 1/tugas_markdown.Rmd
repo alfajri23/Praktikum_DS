@@ -1,0 +1,54 @@
+---
+title: "FeriAlfajri_123190088"
+author: "Feri Alfajri"
+date: "9/25/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(dslabs)
+data(murders)
+```
+
+## 1 Terdiri dari 51 negara
+
+
+```{r echo=FALSE}
+str(murders)
+```
+
+## 2 Kolom
+
+```{r echo=FALSE}
+names(murders)
+```
+
+## 3 character
+
+```{r echo=FALSE}
+a <- murders$abb
+a
+class(a)
+```
+
+## 4 Sama
+```{r echo=FALSE}
+b <- a[1]
+c <- b ==a
+c
+```
+
+## 5 Panjangnya 4
+```{r echo=FALSE}
+length(levels(murders$region))
+
+```
+## Table
+```{r echo=FALSE}
+table(murders$region)
+
+```
+
+
